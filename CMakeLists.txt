@@ -61,11 +61,7 @@ endif()
 include(GNUInstallDirs)
 include(VersionNumber)
 include(BuildDirs)
-
-# include(GetLuaJIT)
-find_package(LuaJIT REQUIRED)
-find_program(LUAJIT_EXECUTABLE luajit REQUIRED)
-
+include(GetLuaJIT)
 include(ExtractLLVM)
 
 if(LLVM_VERSION_MAJOR GREATER 9)
